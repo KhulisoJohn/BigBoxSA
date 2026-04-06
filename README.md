@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a192f,40:00D9FF,80:00CED1,100:001f3f&height=230&section=header&text=BigBoxSA&fontSize=45&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=FULL-STACK%20DEVELOPER%20|%20REACT%20•%20C%23%20•%20PYTHON%20•%20AZURE&descAlignY=55&descSize=14" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a192f,40:00D9FF,80:00CED1,100:001f3f&height=230&section=header&text=BigBoxSA&fontSize=45&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=A smart inventory + marketplace system for small businesses&descAlignY=55&descSize=14" width="100%" />
 
 <br/>
 
