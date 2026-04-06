@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a192f,40:00D9FF,80:00CED1,100:001f3f&height=230&section=header&text=BigBoxSA&fontSize=45&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=A smart inventory + marketplace system for small businesses&descAlignY=55&descSize=14" width="100%" />
+ <img src="https://capsule-render.vercel.app/api?type=waving&color=0%3A0a192f%2C40%3A00D9FF%2C80%3A00CED1%2C100%3A001f3f&height=230&section=header&text=BigBoxSA&fontSize=45&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=A%20smart%20inventory%20%2B%20marketplace%20system%20for%20small%20businesses&descAlignY=55&descSize=14" width="100%" />
 
 <br/>
 
