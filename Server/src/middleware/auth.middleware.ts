@@ -1,7 +1,7 @@
 import { Request, Response , NextFunction } from "express";
 import { verifyToken, JwtPayload } from "../utils/jwt";
 import logger from "../utils/logger";
-import {ApiError} from "../utils/apiError";
+import {ApiError} from "../utils/ApiError";
 
 
 declare global {
