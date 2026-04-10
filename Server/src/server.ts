@@ -47,6 +47,9 @@ app.use(errorHandler);
 
 // connect to database and start server
 const startServer = async () => {
+
+    console.log("Starting server...");
+
   try {
     await connectDatabase();
 
