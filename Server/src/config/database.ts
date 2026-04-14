@@ -2,19 +2,24 @@ import mongoose from "mongoose";
 import logger from "../utils/logger";
 
 const connectDatabase = async () : Promise<void> => {
-    const dbUri = process.env.MONGODB_URI;
+    const dbUri = process.env.MONGO_URI;
 
     if (!dbUri) {
-        logger.error('MONGODB_URI is not defined in environment variables');
-        throw new Error('MONGODB_URI is not defined');
+        logger.error('MONGO_URI is not defined in environment variables');
+        throw new Error('MONGO_URI is not defined');
         process.exit(1);
     }
 
+    console.log("DB URI:", dbUri);
+console.log("Connecting to MongoDB...");
+
+
     try {
         const connection = await mongoose.connect(dbUri, {
-            serverSelectionTimeoutMS: 5000, // 5 seconds timeout
+            serverSelectionTimeoutMS: 15000, // 5 seconds timeout
             socketTimeoutMS: 45000, // 45 seconds socket timeout
         });
+        console.log("Parsed URI:", JSON.stringify(process.env.MONGO_URI));
 
         logger.info(`Connected to MongoDB: ${connection.connection.host}`);
     } catch (error) {
