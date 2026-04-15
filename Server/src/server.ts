@@ -11,7 +11,7 @@ import logger from './utils/logger';
 // import routes here
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 // security & parsing
 app.use(helmet());
@@ -49,10 +49,11 @@ app.use(errorHandler);
 // connect to database and start server
 const startServer = async () => {
 
-    console.log("Starting server...");
+    //console.log("Starting server...");
 
   try {
     await connectDatabase();
+    logger.info('Database connection successful, starting server...');
 
     app.listen(PORT, () => {
       logger.info(`Server is running on port ${PORT}`);
