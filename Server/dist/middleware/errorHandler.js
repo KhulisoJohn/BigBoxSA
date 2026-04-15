@@ -30,8 +30,13 @@ const errorHandler = (err, req, res, next) => {
     else {
         logger_1.default.warn(`Handled error: ${message}`);
     }
-    res.status(statusCode).json(Object.assign({ success: false, message, timestamp: new Date().toISOString() }, (process.env.NODE_ENV === "development" && err instanceof Error
-        ? { stack: err.stack }
-        : {})));
+    res.status(statusCode).json({
+        success: false,
+        message,
+        timestamp: new Date().toISOString(),
+        ...(process.env.NODE_ENV === "development" && err instanceof Error
+            ? { stack: err.stack }
+            : {}),
+    });
 };
 exports.errorHandler = errorHandler;
